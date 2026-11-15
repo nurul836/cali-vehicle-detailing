@@ -1,0 +1,73 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/about",
+      "destination": "/about/index.html"
+    },
+    {
+      "source": "/services",
+      "destination": "/services/index.html"
+    },
+    {
+      "source": "/pricing",
+      "destination": "/pricing/index.html"
+    },
+    {
+      "source": "/gallery",
+      "destination": "/gallery/index.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact/index.html"
+    },
+    {
+      "source": "/book",
+      "destination": "/book/index.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy/index.html"
+    },
+    {
+      "source": "/services/exterior-detailing",
+      "destination": "/services/exterior-detailing/index.html"
+    },
+    {
+      "source": "/services/interior-detailing",
+      "destination": "/services/interior-detailing/index.html"
+    },
+    {
+      "source": "/services/full-vehicle-detailing",
+      "destination": "/services/full-vehicle-detailing/index.html"
+    },
+    {
+      "source": "/services/paint-correction",
+      "destination": "/services/paint-correction/index.html"
+    },
+    {
+      "source": "/services/ceramic-coating",
+      "destination": "/services/ceramic-coating/index.html"
+    },
+    {
+      "source": "/services/engine-bay-detailing",
+      "destination": "/services/engine-bay-detailing/index.html"
+    },
+    {
+      "source": "/((?!.*\\.).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
