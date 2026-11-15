@@ -16,3 +16,5 @@ The comparison uses the same photograph twice, with a CSS filter on one layer; i
 Fonts: Space Grotesk and Inter are bundled via Fontsource and licensed under the SIL Open Font License. Their license files are included in the installed packages. Lucide icons use the ISC License.
 
 `polishing.jpg`: Zac Nielson, https://unsplash.com/photos/CsZjHjFN3N8 ; asset https://images.unsplash.com/photo-1708805282706-f44730b7e527 . Unsplash License. Illustrative process photograph, not the business or its team.
+
+Responsive `*-640.webp`, `*-960.webp` and `*-1600.webp` files are resized/compressed versions of the corresponding licensed JPEGs above.

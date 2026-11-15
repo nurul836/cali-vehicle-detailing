@@ -105,3 +105,7 @@ The lockfile is included. `.gitignore` excludes dependencies, builds and private
 Automated DOM tests cover all routes, missing routes, gallery filtering/lightbox, required appointment fields, complete multi-step request payloads, unavailable delivery, unacknowledged responses and explicit success acknowledgments. TypeScript and Vite builds are run. Local image files are decoded to verify they are valid and referenced images are checked against the build.
 
 Browser preview tooling was unavailable in this execution environment. Actual browser appearance, mobile overflow, live Google Maps interaction and hosted Vercel refresh behavior still need browser verification. Responsive breakpoints and reduced-motion support are implemented; no claim of completed visual QA is made.
+
+## Image performance
+
+Images are served as responsive WebP variants at 640, 960 and 1600 pixels. Originals are retained for provenance and social sharing. Generated variants are committed; normal builds do not require Python. To regenerate after replacing photographs, run `python scripts/optimize-images.py` with Pillow installed. Route-specific hero preloads let the browser request the main image before React starts. Below-the-fold images remain lazy loaded.
